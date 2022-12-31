@@ -5,5 +5,135 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+main .inactive{
+    display: none;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.result{
+    display: none;
+}
+.game{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 350px;
+    margin-top: 40px;
+}
+.game-cpu{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.game-cpu::after{
+    display: block;
+    content: "CPU";
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    top: -20px;
+    left: calc(50% - 25px);
+}
+.game-player::before{
+    display: block;
+    content: "PLAYER";
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    bottom: -20px;
+    left: calc(50% - 50px);
+}
+.game-player{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+[class^="game-"]{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 3px dashed rgb(0, 4, 38);
+}
+.btn{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+[class^="btn-"]{
+    width: 30%;
+    height: 90%;
+    background-color: rgb(16, 16, 194);
+    border-radius: 20% 60% 20% 60%;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.btn-stone{
+    background-image: url(./imagenes/icons/piedra.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-paper{
+    background-image: url(./imagenes/icons/papel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-scissors{
+    background-image: url(./imagenes/icons/tijera.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn .again{
+    position: absolute;
+    top: 60%;
+    z-index: 20;
+
+    width: 180px;
+    height: 60px;
+    border-radius: 0.5pc;
+
+    font-size: 1.8rem;
+    font-weight: bolder;
+    font-family: 'Orbitron', sans-serif;
+}
+.result{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    z-index: 10;
+
+    padding: 40% 10%;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(15, 204, 30);
+    letter-spacing: 5px;
+
+    background-color: rgba(53, 53, 53, 0.774);
 }

@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PiedraPapelTijeras</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./table-desktop.css" media="screen and (min-width: 450px)">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <main>
+      <section class="result inactive">
+        <h2 class="result-wl">GANASTE </h2>
+      </section>
+      <section class="game">
+        <div class="game-cpu"></div>
+        <div class="game-player"></div>
+      </section>
+      <section class="btn">
+        <button class="btn-stone">piedra</button>
+        <button class="btn-paper">papel</button>
+        <button class="btn-scissors">tijera</button>
+        <button class="again inactive">Jugar de nuevo</button>
+      </section>
+    </main>
   </body>
   <script src="./app.js"></script>
 </html>
